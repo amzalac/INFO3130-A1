@@ -136,6 +136,10 @@ html {
     position: absolute;
     bottom: 0.2em;
 }
+#my-designs-page-content, #about-me-page-content, #contact-page-content {
+    display: none;
+    margin: 1em;
+}
 
 /* Page Animations & Transitions*/
 .left-content:hover, .right-content:hover, .bottom-content:hover {
@@ -147,10 +151,6 @@ html {
     text-decoration: underline;
 }
     /* My Designs Page Animations*/
-    #my-designs-page {
-        height: 100vh;
-        width: 100vw;
-    }
     @keyframes show-left {
         0% {top: 50vh; bottom: 50vh; left: 0; right: 100vw;}
         33.3% {top: calc((100vh - 50vh)/2); bottom: calc((100vh - 50vh)/2); left: 0; right: calc((100vw - 21.8vw));}
@@ -167,6 +167,37 @@ html {
         animation: show-left 2s ease-in-out -0.5s;
         top: 0; bottom: 0; left: 0; right: 0;
     }
-    #my-designs-page-content {
-        display: none;
+
+    /* My About Me Page Animations*/
+    @keyframes show-right {
+        0% {top: 50vh; bottom: 50vh; left: 100vw; right: 0;}
+        33.3% {top: calc((100vh - 50vh)/2); bottom: calc((100vh - 50vh)/2); left: calc((100vw - 21.8vw)); right: 0;}
+        66.7% {top: 0; bottom: 0; left: calc((100vw - 21.8vw)); right: 0;}
+        100% {top: 0; bottom: 0; left: 0; right: 0;}
+    }
+    #right-animation {
+        display: hidden;
+        position: absolute;
+        background-color: #998675;
+    }
+    .right-animation {
+        animation: show-right 2s ease-in-out -0.5s;
+        top: 0; bottom: 0; left: 0; right: 0;
+    }
+
+    /* My Contact Page Animations*/
+    @keyframes show-bottom {
+        0% {top: 100vh; bottom: 0; left: 50vw; right: 50vw;}
+        33.3% {top: calc((100vh - 23.5vh)); bottom: 0; left: calc((100vw - 50vw)/2); right: calc((100vw - 50vw)/2);}
+        66.7% {top: calc((100vh - 23.5vh)); bottom: 0; left: 0; right: 0;}
+        100% {top: 0; bottom: 0; left: 0; right: 0;}
+    }
+    #bottom-animation {
+        display: hidden;
+        position: absolute;
+        background-color: #998675;
+    }
+    .bottom-animation {
+        animation: show-bottom 2s ease-in-out -0.5s;
+        top: 0; bottom: 0; left: 0; right: 0;
     }
