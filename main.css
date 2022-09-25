@@ -2,9 +2,15 @@
     padding: 0;
     margin: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
+#home-page {
+    position: relative;
+}
 
 /* Grid Styles*/
-.grid-container {
+#grid-container {
     height: 100vh;
     width: 100vw;
     display: grid;
@@ -21,6 +27,8 @@
     border-color: rgb(231, 231, 231);
     border-width: 3px 3px 3px 0;
     box-shadow: 0px 0px 0px 8px rgba(103, 103, 103, 0.3);
+
+    transition: width 4s, height 4s;
 }
 .middle-content {
     background-color: #7b6c61;
@@ -128,3 +136,37 @@
     position: absolute;
     bottom: 0.2em;
 }
+
+/* Page Animations & Transitions*/
+.left-content:hover, .right-content:hover, .bottom-content:hover {
+    cursor: pointer;
+    background-color: #8a796b;
+}
+.left-content p:hover, .right-content p:hover, .bottom-content p:hover {
+    color: #463d39;
+    text-decoration: underline;
+}
+    /* My Designs Page Animations*/
+    #my-designs-page {
+        height: 100vh;
+        width: 100vw;
+    }
+    @keyframes show-left {
+        0% {top: 50vh; bottom: 50vh; left: 0; right: 100vw;}
+        33.3% {top: calc((100vh - 50vh)/2); bottom: calc((100vh - 50vh)/2); left: 0; right: calc((100vw - 21.8vw));}
+        66.7% {top: 0; bottom: 0; left: 0; right: calc((100vw - 21.8vw));}
+        100% {top: 0; bottom: 0; left: 0; right: 0;}
+    }
+    #left-animation {
+        display: hidden;
+        position: absolute;
+        z-index: 1;
+        background-color: #998675;
+    }
+    .left-animation {
+        animation: show-left 2s ease-in-out -0.5s;
+        top: 0; bottom: 0; left: 0; right: 0;
+    }
+    #my-designs-page-content {
+        display: none;
+    }
