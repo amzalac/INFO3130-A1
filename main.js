@@ -16,4 +16,19 @@ function bottomContentClick() {
     setTimeout(function(){pageContent.style.display = "block"}, 2000);
 }
 
+function exitLeft() {
+    document.getElementById('left-animation').classList.remove("left-animation");
+    document.getElementById("my-designs-page-content").style.display = "none";
+}
+
+function exitRight() {
+    document.getElementById('right-animation').classList.remove("right-animation");
+    document.getElementById("about-me-page-content").style.display = "none";
+}
+
+function exitBottom() {
+    document.getElementById('bottom-animation').classList.remove("bottom-animation");
+    document.getElementById("contact-page-content").style.display = "none";
+}
+
 

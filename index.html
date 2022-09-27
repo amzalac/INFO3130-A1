@@ -25,28 +25,54 @@
         
         <!-- lower row-->
         <div class="lower-left-content"></div>
-        <div class="bottom-content" onclick="bottomContentClick()"><p>Contact</p></div>
+        <div class="bottom-content" id="bottom-content" onclick="bottomContentClick()"><p>Contact</p></div>
         <div class="lower-right-content"></div>
       </div>
 
       <!-- left page animation -->
       <div id="left-animation">
         <div id="my-designs-page-content">
-            <h2>This is my designs page</h2>
+            <button class="exitBtn" onclick="exitLeft()">Back</button>
+            <h2>Some of my designs</h2>
+
+            <p>Content coming soon</p>
+          </div>
         </div>
-      </div>
+        
 
       <!-- right page animation -->
       <div id="right-animation">
         <div id="about-me-page-content">
-          <h2>This is my about me page</h2>
+          <button class="exitBtn" onclick="exitRight()">Back</button>
+          <h2>Hi, I'm Abigail Zalac</h2><br>
+
+          <p>I'm studying software engineering at Conestoga College. My personal interests include:</p><br>
+          <ul>
+            <li>Programming</li>
+            <li>UX/UI design</li>
+            <li>Photography</li>
+            <li>Art</li>
+            <li>Making animations</li>
+            <li>Learning new languages</li>
+          </ul><br>
+          <p>Growing up, I worked on farms and learned about agriculture and gained interpersonal/communication skills.
+            I also often helped out in libraries providing IT support.</p><br>
+          <p>I'm constantly trying to learn new things and improve my skills, using everything
+            as a possible learning experience.</p>
         </div>
       </div>
 
       <!-- bottom page animation -->
       <div id="bottom-animation">
         <div id="contact-page-content">
-          <h2>This is my contact page</h2>
+          <button class="exitBtn" onclick="exitBottom()">Back</button>
+          <h2>How to reach me</h2>
+          <p>Email: azalac7839@conestogac.on.ca
+            <a href = "mailto: azalac7839@conestogac.on.ca">Send email</a></p>
+          <p>LinkedIn: Abigail Zalac
+            <a href="https://www.linkedin.com/in/abigailzalac/" target="_blank">Take me there</a></p>
+          <p>Github: amzalac
+            <a href="https://github.com/amzalac" target="_blank">Take me there</a></p>
         </div>
       </div>
 

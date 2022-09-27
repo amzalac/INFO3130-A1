@@ -4,6 +4,7 @@
 }
 html {
     scroll-behavior: smooth;
+    background-color: #998675;
 }
 #home-page {
     position: relative;
@@ -100,7 +101,7 @@ html {
     box-shadow: 0px 0px 0px 8px rgba(103, 103, 103, 0.3);
 }
 
-/* Font Styles*/
+/* Font + Button Styles*/
 .middle-content p {
     text-align: center;
     margin: 1em;
@@ -138,8 +139,50 @@ html {
 }
 #my-designs-page-content, #about-me-page-content, #contact-page-content {
     display: none;
+    color: rgb(244, 244, 244);
+    font-family: 'Raleway', sans-serif;
+    font-size: 30px;
+    margin: 1em;
+    background-attachment: fixed;
+}
+.exitBtn {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    font-size: 25px;
+    margin-bottom: 0.5em;
+    padding: 0.2em;
+    background-color: #786961;
+    border: none;
+    border-radius: 5px;
+}
+.exitBtn:hover {
+    background-color: #655953;
+}
+#contact-page-content p {
     margin: 1em;
 }
+#contact-page-content a {
+    color: #534741;
+}
+#contact-page-content a:hover {
+    color: #3e3733;
+}
+#about-me-page-content ul {
+    margin-left: 1em;
+}
+#my-designs-page-content h2, #about-me-page-content h2, #contact-page-content h2 {
+    color: #453b36;
+}
+/* #images img {
+    width: 340px;
+    transition: transform 0.6s;
+    margin-right: 0.5em;
+}
+#images img:hover {
+    width: 350px;
+    transform: scale(1.25);
+    z-index: 1;
+} */
 
 /* Page Animations & Transitions*/
 .left-content:hover, .right-content:hover, .bottom-content:hover {
@@ -178,6 +221,7 @@ html {
     #right-animation {
         display: hidden;
         position: absolute;
+        z-index: 1;
         background-color: #998675;
     }
     .right-animation {
@@ -195,6 +239,7 @@ html {
     #bottom-animation {
         display: hidden;
         position: absolute;
+        z-index: 1;
         background-color: #998675;
     }
     .bottom-animation {
