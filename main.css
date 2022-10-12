@@ -102,35 +102,36 @@ html {
 }
 
 /* Font + Button Styles*/
-.middle-content p {
+.middle-content h1 {
     text-align: center;
     margin: 1em;
     padding: 0.25em;
     color: #dfccbc;
     font-family: 'Raleway', sans-serif;
-    font-size: 40px;
     text-shadow: 0 10px 0 #584b45;;
+    font-size: 40px;
 }
 .rotate-right {
     position: absolute;
     transform: rotate(90deg);
     transform-origin: left;
     left: 1.5em;
+    white-space: nowrap;
 }
 .rotate-left {
     position: absolute;
     transform: rotate(-90deg);
     transform-origin: right;
     right: 1.5em;
-    left: -0.5em;
+    white-space: nowrap;
 }
 .left-content p, .right-content p {
-    color: #534741;
+    color: #cecac8;
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
 }
 .bottom-content p {
-    color: #534741;
+    color: #cecac8;
     font-family: 'Raleway', sans-serif;
     font-size: 30px;
     margin-left: 0.5em;
@@ -173,16 +174,6 @@ html {
 #my-designs-page-content h2, #about-me-page-content h2, #contact-page-content h2 {
     color: #453b36;
 }
-/* #images img {
-    width: 340px;
-    transition: transform 0.6s;
-    margin-right: 0.5em;
-}
-#images img:hover {
-    width: 350px;
-    transform: scale(1.25);
-    z-index: 1;
-} */
 
 /* Page Animations & Transitions*/
 .left-content:hover, .right-content:hover, .bottom-content:hover {
@@ -246,3 +237,4 @@ html {
         animation: show-bottom 2s ease-in-out -0.5s;
         top: 0; bottom: 0; left: 0; right: 0;
     }
+
