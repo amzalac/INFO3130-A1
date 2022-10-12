@@ -126,14 +126,14 @@ html {
     white-space: nowrap;
 }
 .left-content p, .right-content p {
-    color: #cecac8;
+    color: #d5d4d3;
     font-family: 'Raleway', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
 }
 .bottom-content p {
-    color: #cecac8;
+    color: #d5d4d3;
     font-family: 'Raleway', sans-serif;
-    font-size: 30px;
+    font-size: 40px;
     margin-left: 0.5em;
     position: absolute;
     bottom: 0.2em;
