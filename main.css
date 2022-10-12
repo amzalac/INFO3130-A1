@@ -126,12 +126,12 @@ html {
     white-space: nowrap;
 }
 .left-content p, .right-content p {
-    color: #d5d4d3;
+    color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
 }
 .bottom-content p {
-    color: #d5d4d3;
+    color: white;
     font-family: 'Raleway', sans-serif;
     font-size: 40px;
     margin-left: 0.5em;
